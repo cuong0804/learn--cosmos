@@ -62,7 +62,20 @@ quyền giao dịch trong tài khoản)
 * ex : baby165nlemfzzzh53rl7ge530u3w29mrlm3t9ll7hc
 * multisig account 
 ### Example:
-* add key :
+* add new key : babyd keys add new test-key 
+* delete key : babyd keys delete test-key
+* note 24 characters in new key
+* recover key: babyd keys add test-key --recover
+* list all keys :babyd keys list
+* show address :babyd keys show test-key -a 
+* show pubkey(public key) : babyd keys show test-key -p (this is one of pair key and you will understand more in attack method TCP )
+* add key to keyring-backend test
+* babyd keys add test-key --keyring-backend=test 
+* list all keys in --keyring backend:
+* babyd keys list --keyring-backend=test
+* add key to home/.baby
+* 
+
 
 //
 export PATH=$PATH:$(go env GOPATH)/bin
