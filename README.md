@@ -56,7 +56,13 @@ https://v1.cosmos.network/intro#what-is-tendermint-core-and-the-abci
 #### complet
 ![image](https://user-images.githubusercontent.com/98722907/213654302-d5641d10-e775-425d-8039-14db633ec0a4.png)
 
-
+### Keyring is where accounts are stored on CLI
+* single account (Trong một tài khoản hoặc cá nhân, một người có tên trên tài khoản và người đó là người duy nhất có
+quyền giao dịch trong tài khoản)
+* ex : baby165nlemfzzzh53rl7ge530u3w29mrlm3t9ll7hc
+* multisig account 
+### Example:
+* add key :
 
 //
 export PATH=$PATH:$(go env GOPATH)/bin
