@@ -1,6 +1,6 @@
 # learn--cosmos
 #1.Cosmos SDk 
-# -introduction: Cosmos is a decentralized network of independent parallel blockchains, each powered by BFT consensus algorithms like [tendermint]( https://tendermint.com)consensus. 
+# -introduction: Cosmos is a decentralized network of independent parallel blockchains, each powered by BFT consensus algorithms like [tendermint]( https://tendermint.com) consensus. 
 -
 ### In other words, Cosmos is an ecosystem of blockchains that can scale and interoperate with each other. Before Cosmos, blockchains were siloed and unable to communicate with each other. They were hard to build and could only handle a small amount of transactions per second. Cosmos solves these problems with a new technical vision. In order to understand this vision we need to go back to the fundamentals of blockchain technology.
 more :
@@ -34,7 +34,8 @@ https://v1.cosmos.network/intro#what-is-tendermint-core-and-the-abci
 * chaind validate-genesis
 
 * start chain : chaind start 
-
+#### complet:
+![image](https://user-images.githubusercontent.com/98722907/213647632-03be163b-c1c9-4f8a-8d7e-e8ca0ad0fb88.png)
 
 
 
