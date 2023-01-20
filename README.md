@@ -53,9 +53,12 @@ https://v1.cosmos.network/intro#what-is-tendermint-core-and-the-abci
 * export PATH=$PATH:$(go env GOPATH)/bin
 * sudo pip install toml-cli
 * deloy :bash scripts/test-node-deploy.sh
+#### complet
+![image](https://user-images.githubusercontent.com/98722907/213654302-d5641d10-e775-425d-8039-14db633ec0a4.png)
 
 
 
+//
 export PATH=$PATH:$(go env GOPATH)/bin
 
 //
