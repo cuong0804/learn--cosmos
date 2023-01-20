@@ -29,7 +29,10 @@ https://v1.cosmos.network/intro#what-is-tendermint-core-and-the-abci
 * $ chaind keys add validator --keyring-backend test
 * address validator : ?
 * $ chaind add-genesis-account [?] 10000000stake --keyring-backend test
-* $ chaind gentx validator 1000000stake --chain-id chain1-testnet --keyring-backend test
+* $ chaind gentx validator 1000000stake --chain-id chain-testnet --keyring-backend test
+* chaind collect-gentxs
+* chaind validate-genesis
+
 * start chain : chaind start 
 
 
