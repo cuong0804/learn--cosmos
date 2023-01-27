@@ -81,10 +81,19 @@ quyền giao dịch trong tài khoản)
 * add validator for chain baby (** babyd  init temp_chain --chain-id baby-testnet ** )
 * (** babyd add-genesis-account baby1qkwj9yt4c3cv3ay4ezyuvysmqyckavkgkq90et 10000000ubaby )
 * (** babyd gentx validator 1000000ubaby --chain-id baby-testnet **  babyd collect-gentxs ** babyd validate-genesis )
-// list node 0 ,1 ,2
- **babyd keys list --keyring-backend=test --home=$HOME/.baby/node0
- ** babyd keys list --keyring-backend=test --home=$HOME/.baby/node1
- 
+* // list node 0 ,1 ,2
+* **babyd keys list --keyring-backend=test --home=$HOME/.baby/node0
+*  ** babyd keys list --keyring-backend=test --home=$HOME/.baby/node1
+ ### 2.2 Making a transaction through CLI 
+ * use (* babyd tx bank send --help ) to read information 
+ * node : <host>:<port> to tendermint rpc interface for this chain (this is "tcp://localhost:26657")
+ * from : Name or address of private key with which to sign
+ * gas : gas limit to set per-transaction; set to "auto" to calculate sufficient gas automatically (default 200000)
+ * fees: Fees to pay along with transaction; eg: 10uatom
+ * chain_id: The network chain ID (default "baby")
+ *Ok ready : babyd tx bank send {} {} 1000000ubaby --chain-id baby-1 --node tcp://localhost:26657  --gas auto --fees 10ubaby -y 
+
+
 //
 export PATH=$PATH:$(go env GOPATH)/bin
 
