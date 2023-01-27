@@ -7,7 +7,7 @@ more :
 https://v1.cosmos.network/intro#what-is-tendermint-core-and-the-abci
 
 ## 2.get start
-## user unbuntu (newbie guide and setup)
+## user unbuntu (guide and setup)
 ## Group 1: Starting a chain
 ### Scaffolding and starting a chain
 #### 1.Download ignite CLI from :https://docs.ignite.com/#install-ignite-cli 
@@ -73,10 +73,18 @@ quyền giao dịch trong tài khoản)
 * babyd keys add test-key --keyring-backend=test 
 * list all keys in --keyring backend:
 * babyd keys list --keyring-backend=test
-* add key to home/.baby
-* 
+* add key to home/.baby (
+// setup chain baby 
+* build  multinode local (** sudo apt install screen ** bash scripts/multinode-local-testnet.sh ** ) 
+![image](https://user-images.githubusercontent.com/98722907/215092095-e39fab84-6645-4a75-8693-45fefcdc74d1.png)
 
-
+* add validator for chain baby (** babyd  init temp_chain --chain-id baby-testnet ** )
+* (** babyd add-genesis-account baby1qkwj9yt4c3cv3ay4ezyuvysmqyckavkgkq90et 10000000ubaby )
+* (** babyd gentx validator 1000000ubaby --chain-id baby-testnet **  babyd collect-gentxs ** babyd validate-genesis )
+// list node 0 ,1 ,2
+ **babyd keys list --keyring-backend=test --home=$HOME/.baby/node0
+ ** babyd keys list --keyring-backend=test --home=$HOME/.baby/node1
+ 
 //
 export PATH=$PATH:$(go env GOPATH)/bin
 
