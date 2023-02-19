@@ -71,19 +71,9 @@ quyền giao dịch trong tài khoản)
 * show pubkey(public key) : babyd keys show test-key -p (this is one of pair key and you will understand more in attack method TCP )
 * add key to keyring-backend test
 * babyd keys add test-key --keyring-backend=test 
-* list all keys in --keyring backend:
+* list all keys in --keyring backend
 * babyd keys list --keyring-backend=test
-* add key to home/.baby (
-// setup chain baby 
-* build  multinode local (** sudo apt install screen ** bash scripts/multinode-local-testnet.sh ** ) 
-![image](https://user-images.githubusercontent.com/98722907/215092095-e39fab84-6645-4a75-8693-45fefcdc74d1.png)
 
-* add validator for chain baby (** babyd  init temp_chain --chain-id baby-testnet ** )
-* (** babyd add-genesis-account baby1qkwj9yt4c3cv3ay4ezyuvysmqyckavkgkq90et 10000000ubaby )
-* (** babyd gentx validator 1000000ubaby --chain-id baby-testnet **  babyd collect-gentxs ** babyd validate-genesis )
-* // list node 0 ,1 ,2
-* **babyd keys list --keyring-backend=test --home=$HOME/.baby/node0
-*  ** babyd keys list --keyring-backend=test --home=$HOME/.baby/node1
  ### 2.2 Making a transaction through CLI 
  * use (* babyd tx bank send --help ) to read information 
  * node : <host>:<port> to tendermint rpc interface for this chain (this is "tcp://localhost:26657")
